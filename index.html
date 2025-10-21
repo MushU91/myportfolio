@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./page.css" />
+    <title>CSS</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top bg-white">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Welcome</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="home bg-grid" id="home">
+        <!-- Hero Section -->
+        <div class="home-text animate__animated animate__fadeInDown">
+          <h1 class="home_title">
+            HI, <br />
+            I'm <span style="color: #ec9d64">Hlaing Phyo Thu</span><br />
+            Web Developer
+          </h1>
+          <a href="#contact" class="button">Contact</a>
+          <br />
+          <div
+            class="home_social my-3 social-icons d-flex gap-3 animate__animated animate__bounce"
+          >
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                class="bi bi-facebook"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                />
+              </svg>
+            </a>
+
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                class="bi bi-github"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                />
+              </svg>
+            </a>
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                class="bi bi-linkedin"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!-- Hero Section -->
+
+        <!-- Image Section -->
+        <div class="home-img animate__animated animate__fadeInDown">
+          <svg viewBox="0 0 270 270" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill="#DEE5FB"
+              d="M54.8,-54.2C68.1,-41.4,74.1,-20.7,73.6,-0.5C73.1,19.6,66,39.3,52.6,52.4C39.3,65.4,19.6,72,0,72C-19.7,72,-39.3,65.5,-52,52.4C-64.7,39.3,-70.3,19.7,-70.1,0.2C-69.9,-19.3,-63.9,-38.6,-51.2,-51.4C-38.6,-64.2,-19.3,-70.4,0.7,-71.2C20.7,-71.9,41.4,-67,54.8,-54.2Z"
+              transform="translate(100 100)"
+            />
+            <image href="./01 (1).png" x="50" y="60" />
+          </svg>
+        </div>
+        <!-- image section -->
+      </section>
+      <!-- header -->
+
+      <!-- about -->
+      <section class="about" id="about">
+        <h2 class="about-header animate__animated animate__bounceInDown">
+          ABOUT
+        </h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 my-4 animate__animated animate__fadeInDown">
+              <img src="./02.jpg" alt="image2" />
+            </div>
+            <div
+              class="col-md-6 about-content animate__animated animate__backInRight"
+            >
+              <h2>Hello, My name is Hlaing Phyo Thu</h2>
+              <br />
+              <p>
+                I'm a passionate Web Developer who enjoys turning creative ideas
+                into modern, responsive, and user-friendly websites. I
+                specialize in building clean, functional web applications using
+                HTML, CSS, JavaScript, and React. I love learning new
+                technologies, improving my coding skills, and bringing designs
+                to life with attention to detail. My goal is to create digital
+                experiences that are both beautiful and efficient, helping
+                people and businesses make their online presence stand out.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- about -->
+      <!-- Skills -->
+      <section class="skills my-5" id="skills">
+        <h2 class="skills-header animate__animated animate__bounceInDown">
+          SKILLS
+        </h2>
+        <div class="container text-center">
+          <div class="skill my-5">
+            <h3 class="animate__animated animate__bounceInDown">
+              <i>PROFESSIONAL SKILLS</i>
+            </h3>
+            <p class="animate__animated animate__backInRight">
+              <i>
+                I have strong skills in HTML, CSS, JavaScript, and React. I can
+                build clean, responsive, and user-friendly web pages using HTML
+                and CSS. With JavaScript, I add interactivity and dynamic
+                features to make websites come alive. I also use React to create
+                modern, fast, and reusable front-end components, ensuring smooth
+                user experiences and efficient code structure.
+              </i>
+            </p>
+          </div>
+          <div class="skill-icons">
+            <div class="skill-item">
+              <i class="fa-brands fa-html5"></i>
+              <p>HTML</p>
+              <span>92%</span>
+            </div>
+            <div class="skill-item">
+              <i class="fa-brands fa-css3-alt"></i>
+              <p>CSS</p>
+              <span>90%</span>
+            </div>
+            <div class="skill-item">
+              <i class="fa-brands fa-js"></i>
+              <p>JavaScript</p>
+              <span>65%</span>
+            </div>
+            <div class="skill-item">
+              <i class="fa-brands fa-react"></i>
+              <p>React</p>
+              <span>75%</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- skills -->
+
+      <!-- Project -->
+      <section class="prj" id="projects">
+        <h2 class="prj-header animate__animated animate__bounceInDown">
+          PROJECTS
+        </h2>
+        <div class="container my-4 p-3">
+          <div class="row">
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <img src="./p1.png" class="card-img-top" alt="Project 1" />
+                <div class="card-body text-center">
+                  <h5 class="card-title">STEAK HOUSE</h5>
+                  <p class="card-text">
+                    SteakHouse Website is using HTML, CSS, JavaScript and
+                    Bootstrap to look responsive Website.
+                  </p>
+                  <a
+                    href="https://unrivaled-gingersnap-940600.netlify.app/"
+                    class="btn btn-primary"
+                    >See More
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-arrow-right"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <img src="./p2.png" class="card-img-top" alt="STEAK HOUSE" />
+                <div class="card-body text-center">
+                  <h5 class="card-title">LOG IN</h5>
+                  <p class="card-text">
+                    Log in page is using HTML, CSS, Bootstrap.When you log
+                    in,you will get another page that connect other pages.
+                  </p>
+                  <a
+                    href="https://mylogin912.netlify.app/"
+                    class="btn btn-primary"
+                    target="_blank"
+                    >See More
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-arrow-right"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <img src="./p3.png" class="card-img-top" alt="Project 3" />
+                <div class="card-body text-center">
+                  <h5 class="card-title">BOOKSTORE</h5>
+                  <p class="card-text">
+                    Bookstore is using React,HTML,CSS,JavaScript and Open
+                    Library API.Can search Book from this website.
+                  </p>
+                  <a href="#" class="btn btn-primary"
+                    >See More
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-arrow-right"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- project -->
+      <!-- contact -->
+      <section class="contact" id="contact">
+        <form
+          action=""
+          id="loginform"
+          class="animate__animated animate__fadeInDown"
+        >
+          <h1>LOGIN</h1>
+          <div class="input">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Enter Username"
+              required
+            />
+          </div>
+          <div class="input">
+            <label for="pass">Password</label>
+            <input
+              type="password"
+              name="pass"
+              id="pass"
+              placeholder="Enter Password"
+              required
+            />
+          </div>
+          <div class="rem">
+            <label for=""
+              ><input type="checkbox" name="rem" id="rem" />Remember Me</label
+            >
+            <a href="#">Forgot Password?</a>
+          </div>
+          <button type="button" id="a">Log in</button>
+          <div class="reg">
+            <p>Don't have an account? <a href="#">Sign up</a></p>
+          </div>
+        </form>
+      </section>
+      <div class="button-up">
+        <a href="#home">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            fill="currentColor"
+            class="bi bi-arrow-up"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"
+            />
+          </svg>
+        </a>
+      </div>
+      <!-- contact -->
+    </main>
+    <div>
+      <footer>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#0099ff"
+            fill-opacity="1"
+            d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+        </svg>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
