@@ -34,8 +34,9 @@ a {
   position: sticky !important;
   top: 0;
   z-index: 1050;
-  background-color: #fff !important;
+  background-color: #F0E5D8 !important;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  opacity: 0.89;
 }
 #navbarNav li a:hover {
   cursor: pointer;
@@ -531,3 +532,49 @@ form h1:hover {
   --animate-duration: 1500ms;
   --animate-delay: 1.9s;
 }
+
+/* skills */
+.skill-icons .skill-item {
+  position: relative; /* needed for ::before */
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* Hover fill effect */
+.skill-icons .skill-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%; /* initial fill is 0 */
+  height: 100%;
+  background: linear-gradient(90deg, #8caac6, #bb5c69); /* color gradient */
+  z-index: 0; /* behind text */
+  transition: width 0.6s ease;
+  border-radius: 15px;
+}
+
+/* On hover, fill according to data-percent */
+.skill-icons .skill-item:hover::before {
+  width: attr(data-percent percentage); /* works in modern browsers */
+}
+
+/* Make text and icon appear above the fill */
+.skill-icons .skill-item i,
+.skill-icons .skill-item p,
+.skill-icons .skill-item span {
+  position: relative;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+
+/* Optional: text color change on hover for contrast */
+.skill-icons .skill-item:hover i,
+.skill-icons .skill-item:hover p,
+.skill-icons .skill-item:hover span {
+  color: #85DEB2;
+}
+.skill-icons .skill-item::before {
+  width: var(--fill-width, 0%);
+}
+
